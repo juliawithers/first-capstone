@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Create Character page wireframe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="create.css">
+  </head>
+
+  <body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+      <header role="banner">
+        <h1>Create your Character</h1>
+      </header>
+      <section>
+        <form>
+            <h2>Name your character:</h2>
+            <div>
+                <label for="character-name">Choose character name:</label>
+                <button type="submit" name='charName' id='charName'>Generate Random Name</button>
+                <p>[random name]</p>
+                <p>Or create your own</p>
+                <input type="text" name="character-name" id="character-name">
+            </div>
+            <h2>Select attribute distribution:</h2>
+            <div>
+                <label for="strength">Strength</label>
+                <input type="strength" name='strength' id='strength' />
+                <br>
+                <label for="intelligence">Intelligence</label>
+                <input type="intelligence" name='intelligence' id='intelligence' />
+                <br>
+                <label for="charisma">Charisma</label>
+                <input type="charisma" name='charisma' id='charisma' />
+                <br>
+                <label for="agility">Agility</label>
+                <input type="agility" name='agility' id='agility' />
+                <br>
+                <label for="bonus">Choose bonus attribute</label>
+                <select type="bonus" name='bonus' id='bonus'>
+                    <option selected>Choose One</option>
+                    <option>Strength</option>
+                    <option>Intelligence</option>
+                    <option>Charisma</option>
+                    <option>Agility</option>
+                </select>
+            </div>
+            <button type='submit'>CREATE</button>
+        </form>
+      </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+  </body>
+</html>
