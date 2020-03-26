@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Wireframe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<!-- Landing Page -->
+  <body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+      <header role="banner">
+        <h1>Virtual Fight Club</h1>
+      </header>
+      <section>
+        <h2>Create a Character!</h2>
+        <p>Create a character and fight opponents! Get to the next level and level up the character attributes of your choosing. Each character is unique!</p>
+        <p>[placeholder for screenshot of character page]</p>
+      </section>
+      <section>
+        <h2>The FIGHT</h2>
+        <p>Each character has a set of base attributes that you can build on, so each fight will be different! Each opponent is chosen at random and the winner is determined by an algorithm that incorporates the attribute values and random chance. </p>
+        <p>[placeholder for screenshot of fight page]</p>
+      </section>
+      <section>
+        <h2>Create your character today!</h2>
+        <form>
+            <div>
+            <label for="first-name">First name</label>
+            <input placeholder='First Name' type="text" name='first-name' id='first-name' />
+            </div>
+            <div>
+            <label for="last-name">Last name</label>
+            <input type="text" name='last-name' id='last-name' placeholder='Last Name' />
+            </div>
+            <div>
+            <label for="username">Email</label>
+            <input type="text" name='username' id='username' />
+            </div>
+            <div>
+            <label for="password">Password</label>
+            <input type="password" name='password' id='password' />
+            </div>
+            <button type='submit'>Sign Up!</button>
+        </form>
+      </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+
+<!-- Login Page -->
+    <main role="main">
+      <header role="banner">
+        <h1>Virtual Fight Club</h1>
+      </header>
+      <section>
+        <h2>Login</h2>
+        <form>
+            <div>
+                <label for="username">Email</label>
+                <input type="text" name='username' id='username' />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name='password' id='password' />
+            </div>
+            <button type='submit'>Login</button>
+        </form>
+      </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+
+  <!-- User Page -->
+    <main role="main">
+      <header role="banner">
+        <h1>[Character Name]</h1>
+      </header>
+      <section>
+        <h2>Summary</h2>
+        <article>
+            <h3>Attributes:</h3>
+            <p>Strength: [strength score]</p>
+            <p>Intelligence: [intelligence score]</p>
+            <p>Charisma:[charisma score]</p>
+            <p>Agility: [agility score]</p>
+            <p>Bonus attribute: [extra points applied to a single attribute]</p>
+            <br>
+            <h3>Win-Loss Record:</h3>
+            <p>[wins] - [losses]</p>
+            <br>
+            <h3>Current Level and Points:</h3>
+            <p>Level: [level]</p>
+            <p>Current Points: [current points]</p>
+            <br>
+            <h3>Points to next Level:</h3>
+            <p>[next level points goal - current points]</p>
+            <br>
+            <h3>Attribute points given at next level:</h3>
+            <p>[next attribute point allotment]</p>
+        </article>
+      </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+
+
+  <!-- Create Character -->
+ 
+    <main role="main">
+      <header role="banner">
+        <h1>Create your Character</h1>
+      </header>
+      <section>
+        <form>
+            <h2>Name your character:</h2>
+            <div>
+                <label for="character-name">Choose character name:</label>
+                <button type="submit" name='charName' id='charName'>Generate Random Name</button>
+                <p>[random name]</p>
+                <p>Or create your own</p>
+                <input type="text" name="character-name" id="character-name">
+            </div>
+            <h2>Select attribute distribution:</h2>
+            <div>
+                <label for="strength">Strength</label>
+                <input type="strength" name='strength' id='strength' />
+                <br>
+                <label for="intelligence">Intelligence</label>
+                <input type="intelligence" name='intelligence' id='intelligence' />
+                <br>
+                <label for="charisma">Charisma</label>
+                <input type="charisma" name='charisma' id='charisma' />
+                <br>
+                <label for="agility">Agility</label>
+                <input type="agility" name='agility' id='agility' />
+                <br>
+                <label for="bonus">Choose bonus attribute</label>
+                <select type="bonus" name='bonus' id='bonus'>
+                    <option selected>Choose One</option>
+                    <option>Strength</option>
+                    <option>Intelligence</option>
+                    <option>Charisma</option>
+                    <option>Agility</option>
+                </select>
+            </div>
+            <button type='submit'>CREATE</button>
+        </form>
+      </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+
+
+  <!-- Error Message -->
+
+    <main role="main">
+      <header role="banner">
+        <h1>Virtual Fight Club</h1>
+      </header>
+      <section>
+        <h2>Sorry!</h2>
+        <p>[error message]</p>
+        <p>[link to login/email for help]</p>
+      </section>      
+    </main>
+    <footer role="content-info">Footer</footer>
+
+
+  <!-- Administrative Page -->
+
+    <main role="main">
+      <header role="banner">
+        <h1>Administrative Page</h1>
+      </header>
+      <section>
+          <button>Sort By Name</button>
+          <button>Sort By Wins</button>
+          <button>Sort By Date Created</button>
+          <button>Filter By Reports</button>
+        <ul>
+            <li>[User 1 information][delete][send email]</li>
+            <li>[User 2 information][delete][send email]</li>
+            <li>[User 3 information][delete][send email]</li>
+            <li>[User 4 information][delete][send email]</li>
+        </ul>
+      </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+  </body>
+</html>
